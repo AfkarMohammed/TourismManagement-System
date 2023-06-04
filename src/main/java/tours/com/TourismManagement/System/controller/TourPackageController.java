@@ -22,7 +22,7 @@ public class TourPackageController {
             model.addAttribute("packages", tourpackageServices.findAll());
             return "viewtourpackage";
         }
-        @GetMapping("/add-package")
+        @GetMapping("/add-tourpackage")
         public String showaddPackagePage(Model model){
             model.addAttribute("command", new Package());
             return "addtourpackage";
