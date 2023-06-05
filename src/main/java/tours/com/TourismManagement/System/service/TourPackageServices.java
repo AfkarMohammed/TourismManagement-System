@@ -25,7 +25,7 @@ public class TourPackageServices {
      */
     public List<Package> findAll(){
         List<Package> packages = tourpackagerepositoryobject.findAll();
-        LOG.info("Successfully retrieved all the package details");
+        LOG.info("Successfully retrieved all the tour package details");
         return packages;
     }
     /**
@@ -35,7 +35,7 @@ public class TourPackageServices {
      */
     public Optional<Package> findById(int id){
         Optional<Package> packag = tourpackagerepositoryobject.findById(id);
-        LOG.info("Successfully retrieved package details for the given id");
+        LOG.info("Successfully retrieved tour package details for the given id");
         return packag;
     }
     /**
@@ -45,27 +45,27 @@ public class TourPackageServices {
      */
     public Package savePackage(Package packageobject){
         Package savedPackages = tourpackagerepositoryobject.save(packageobject);
-        LOG.info("successfully saved package for the given details.");
+        LOG.info("successfully saved tour package for the given details.");
         return savedPackages;
     }
     /**
      *
      * This method updates a package of given id
      * @param id
-     * @param packag
+     * @param packages
      * @return
      */
-    public Package updatepackage(int id, Package packag) {
+    public Package updatepackage(int id, Package packages) {
         LOG.info("updating package for a given id.");
         Package updatepackage = tourpackagerepositoryobject.findById(id).orElse(null);
         if (updatepackage != null){
-            updatepackage.setPackagename(packag.getPackagename());
-            updatepackage.setPackagetype(packag.getPackagetype());
-            updatepackage.setPackageprice(packag.getPackageprice());
-            updatepackage.setPackagedetails(packag.getPackagedetails());
+            updatepackage.setPackagename(packages.getPackagename());
+            updatepackage.setPackagetype(packages.getPackagetype());
+            updatepackage.setPackageprice(packages.getPackageprice());
+            updatepackage.setPackagedescription(packages.getPackagedescription());
             tourpackagerepositoryobject.save(updatepackage);
         }else{
-            LOG.warn("No package details for the given id");
+            LOG.warn("No tour package details found  for the given id");
         }
         return updatepackage;
     }
@@ -75,6 +75,6 @@ public class TourPackageServices {
      */
     public void deleteById(int id){
         tourpackagerepositoryobject.deleteById(id);
-        LOG.info("Successfully deleted the details of the given id.");
+        LOG.info("Successfully removed the tour package details of the given id.");
     }
 }

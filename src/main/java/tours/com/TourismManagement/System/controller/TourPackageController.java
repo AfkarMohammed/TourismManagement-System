@@ -17,38 +17,45 @@ public class TourPackageController {
         @Autowired
         private TourPackageServices tourpackageServices;
 
-        @GetMapping("/read-package")
-        public String showreadPackagePage(Model model){
+        //view the tour package details on viewtourpackage page
+        @GetMapping("/view-tourpackage")
+        public String viewtourPackagePage(Model model){
             model.addAttribute("packages", tourpackageServices.findAll());
             return "viewtourpackage";
         }
+        //add the tour package details on addtourpackage page
         @GetMapping("/add-tourpackage")
-        public String showaddPackagePage(Model model){
+        public String viewaddtourPackagePage(Model model){
             model.addAttribute("command", new Package());
             return "addtourpackage";
         }
-        @PostMapping("/add-package")
-        public String addPackage(@ModelAttribute("package") Package packag){
-            tourpackageServices.savePackage(packag);
-            return "redirect:/read-package";
+        //view the added tour packages  on the viewtourpage
+        @PostMapping("/add-tourpackage")
+        public String addtourPackage(@ModelAttribute("package") Package packages){
+            tourpackageServices.savePackage(packages);
+            return "redirect:/view-tourpackage";
         }
 
-        @GetMapping("/update-package/{id}")
-        public String showupdatePackagePage(@PathVariable int id, Model model){
+        //update the tour package details on the updatetourpackage page
+        @GetMapping("/update-tourpackage/{id}")
+        public String viewupdatePackagePage(@PathVariable int id, Model model){
             model.addAttribute("id", id);
             model.addAttribute("command", tourpackageServices.findById(id).orElse(null));
             return "updatetourpackage";
         }
-        @PostMapping("/update-package/{id}")
-        public String updatePackage(@PathVariable int id, @ModelAttribute("package") Package packag){
-            tourpackageServices.updatepackage(id, packag);
-            return "redirect:/read-package";
+
+        //view the tour package details on the viewtourpackage page
+        @PostMapping("/update-tourpackage/{id}")
+        public String updatetourPackage(@PathVariable int id, @ModelAttribute("package") Package packages){
+            tourpackageServices.updatepackage(id, packages);
+            return "redirect:/view-tourpackage";
         }
 
-        @GetMapping("/delete-package/{id}")
-        public String deletePackage(@PathVariable int id){
+        //delete the tour package details on view tourpackage page
+        @GetMapping("/delete-tourpackage/{id}")
+        public String deletetourPackage(@PathVariable int id){
             tourpackageServices.deleteById(id);
-            return "redirect:/read-package";
+            return "redirect:/view-tourpackage";
         }
     }
 
