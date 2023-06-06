@@ -1,5 +1,5 @@
 .navbar{
-  background-color: #000 !important;
+  background-color: #1D63FF !important;
 }
 
 .navbar .navbar-brand{
@@ -42,17 +42,17 @@
 /*Main*/
 body{
 
-  background-image: url("img/234.jpg");
+  background-image: url("static/img/goa.jpg");
 
 
 }
 
 .-fluid{
-  background: linear-gradient(#168AAD,#34A0A4);
+  background: #1D63FF;
 
 }
 .navbar{
-  background: linear-gradient(#34A0A4,#168AAD);
+  background: #1D63FF;
   height: 80px;
 }
 
@@ -80,7 +80,7 @@ body{
 #head{
   color: White;
   font-weight: 600;
-  background: linear-gradient(#34A0A4,#168AAD);
+  background: #1D63FF;
 }
 
 
@@ -223,7 +223,7 @@ li.nav-item button a:hover{
 
 
   #Brands-varieties{
-    background: linear-gradient(#168AAD,#34A0A4);
+    background: #1D63FF;
     height: 40px;
     color: #F7EFED;
     font-size: 21px;
@@ -270,7 +270,7 @@ li.nav-item button a:hover{
 footer{
     margin-top:-50px;
     padding: 10px;
-    background: linear-gradient(#34A0A4,#168AAD);
+    background: #1D63FF;
     color: #F7EFED;
 }
 #food{

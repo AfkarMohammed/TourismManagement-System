@@ -5,7 +5,6 @@
 <link href="/css/bootstrap.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 <center><body class="bg">
-<div class=" container-fluid"> </div>
  <h1 class="text-light text-center " style="background:#1D63FF;"> <strong> Tour Package </strong></h1>
     <img  src="img/singapore.jpg" class="d-block w-100 " style="height:250px ; margin-bottom:20px;" alt="..." >
     <div class="card">
