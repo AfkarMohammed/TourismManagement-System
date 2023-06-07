@@ -15,7 +15,9 @@ public class FeedbackController {
     @Autowired
     private FeedbackService feedbackService;
 
+//   annotation for mapping HTTP GET requests onto specific handler methods.
     @GetMapping("/read-feedback")
+//    Show the Read Feedback Page
     public String showreadFeedbackPage(Model model){
         model.addAttribute("feedbacks", feedbackService.findAll());
         return "readfeedback";
@@ -26,6 +28,7 @@ public class FeedbackController {
         return "createfeedback";
     }
     @PostMapping("/create-feedback")
+//    Show the Create Customer Feedback Page
     public String createFeedback(@ModelAttribute("feedback")Feedback feedback){
        feedbackService.saveFeedback(feedback);
         return "redirect:/read-feedback";
@@ -42,7 +45,7 @@ public class FeedbackController {
         feedbackService.updatefeedback(id, feedback);
         return "redirect:/read-feedback";
     }
-
+//
     @GetMapping("/delete-feedback/{id}")
     public String deleteFeedback(@PathVariable int id){
         feedbackService.deleteById(id);
