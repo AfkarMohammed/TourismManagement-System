@@ -1,5 +1,7 @@
-package tours.com.TourismManagement.System.controller;
+package  tours.com.TourismManagement.System.controller;
 
+import tours.com.TourismManagement.System.model.Feedback;
+import tours.com.TourismManagement.System.service.FeedbackService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +27,7 @@ public class FeedbackController {
     }
     @PostMapping("/create-feedback")
     public String createFeedback(@ModelAttribute("feedback")Feedback feedback){
-        feedbackService.saveFeedback(feedback);
+       feedbackService.saveFeedback(feedback);
         return "redirect:/read-feedback";
     }
 
@@ -46,3 +48,4 @@ public class FeedbackController {
         feedbackService.deleteById(id);
         return "redirect:/read-feedback";
     }
+}
