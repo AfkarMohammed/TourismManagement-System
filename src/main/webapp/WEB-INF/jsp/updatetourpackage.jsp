@@ -5,7 +5,7 @@
 <link href="/css/style.css" rel="stylesheet">
 <center><body class="bg">
 <h1 class="text-light text-center " style="background:#1D63FF;"> <strong> Tour Package </strong></h1>
-    <img src="img/singapore.jpg" class="d-block w-100 " style="height:550px ; margin-bottom:20px;" alt=".." >
+    <img src="/img/singapore.jpg" class="d-block w-100 " style="height:550px ; margin-bottom:20px;" alt=".." >
     <div class="card">
         <h2 class="text-dark" style="background: yellow; text-align: left;"><strong>Update Tour Package</strong></h2>
         <form:form method="post" action="/update-tourpackage/${id}">
