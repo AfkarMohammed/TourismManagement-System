@@ -5,7 +5,7 @@
 <link href="/css/customer.css" rel="stylesheet">
 <center><body class="bg">
 <h1 class="text-light text-center " style="background:#1D63FF;"> <strong> Hotel Information </strong></h1>
-<img  src="img/hotel.jpg" class="d-block w-100 " style="height:250px ; margin-bottom:20px;" alt="..." >
+<img  src="/img/hotel.jpg" class="d-block w-100 " style="height:250px ; margin-bottom:20px;" alt="..." >
 <h2 class="text-dark" style="background: yellow; text-align: left;"><strong>View Hotel Information</strong></h2>
 <table border="5" width="90%" cellpadding="2">
     <tr>
