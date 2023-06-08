@@ -5,7 +5,7 @@
 <link href="/css/customer.css" rel="stylesheet">
 <center><body class="bg">
 <h1 class="text-light text-center " style="background:#1D63FF;"> <strong> Hotel Information </strong></h1>
-<img  src="img/goa.jpg" class="d-block w-100 " style="height:250px ; margin-bottom:20px;" alt="..." >
+<img  src="/img/goa.jpg" class="d-block w-100 " style="height:250px ; margin-bottom:20px;" alt="..." >
 
 
     <div class="card">
