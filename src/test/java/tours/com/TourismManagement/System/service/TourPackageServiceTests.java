@@ -35,7 +35,7 @@ public class TourPackageServiceTests {
     void testUpdateBooking(){
         Package packag = tourpackageServices.findById(1).orElseThrow(EntityNotFoundException::new);
         packag.setPackageprice("LKR.80000");
-        Package updatepackage = tourpackageServices.updatepackage(-1, packag);
+        Package updatepackage = tourpackageServices.updatepackage(1, packag);
         Assertions.assertEquals("LKR.80000",updatepackage.getPackageprice());
     }
     @AfterAll
