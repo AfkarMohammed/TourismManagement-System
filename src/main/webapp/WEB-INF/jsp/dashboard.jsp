@@ -13,7 +13,7 @@
         <div class="col-sm-6">
             <div class="card card-block">
                 <h3 class="card-title">Package Managment</h3>
-                <a href="/read-package" class="btn btn-primary">Click Button</a>
+                <a href="/view-tourpackage" class="btn btn-primary">Click Button</a>
             </div>
         </div>
         <div class="col-sm-6">
@@ -31,7 +31,7 @@
         <div class="col-sm-6">
             <div class="card card-block">
                 <h3 class="card-title">Hotel</h3>
-                <a href="/read-hotel" class="btn btn-primary">Click Button</a>
+                <a href="/view-hotel" class="btn btn-primary">Click Button</a>
             </div>
         </div>
 
