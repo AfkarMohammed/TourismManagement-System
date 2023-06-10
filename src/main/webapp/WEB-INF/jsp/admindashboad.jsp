@@ -26,7 +26,7 @@
         <div class="col-sm-6">
             <div class="card card-block">
                 <h3 class="card-title">Hotel Information</h3>
-                <a href="/view-hotel" class="btn btn-warning">View Feedback</a>
+                <a href="/view-hotel" class="btn btn-warning">View Hotel</a>
             </div>
         </div>
         <div class="col-sm-6">
@@ -39,7 +39,7 @@
     <div class="col-sm-6">
         <div class="card card-block">
             <h3 class="card-title">Booking  Information</h3>
-            <a href="/read-booking" class="btn btn-warning">View Feedback</a>
+            <a href="/read-booking" class="btn btn-warning">View Booking</a>
         </div>
     </div>
 

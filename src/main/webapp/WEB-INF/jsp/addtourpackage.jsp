@@ -14,8 +14,8 @@
 
             <table>
 
-                    <td>Package: <form:input path="packagename"/></td>
-                    <td>Package Name:<form:input path="packagetype"/> </td>
+                    <td>Package Name: <form:input path="packagename"/></td>
+                    <td>Package Type:<form:input path="packagetype"/> </td>
                     <td>Price:   <form:input path="packageprice"/> </td>
                     <td>Details:  <form:input path="packagedescription"/> </td>
 

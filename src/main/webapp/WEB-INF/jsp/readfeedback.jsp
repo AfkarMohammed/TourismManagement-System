@@ -17,7 +17,7 @@
         <th>Delete</th>
     </tr>
     <c:forEach var="feedback" items="${feedbacks}">
-        //adding the feedback data to the relevent columns
+
         <tr>
             <td style="border: 1px solid black;">${feedback.id}</td>
             <td style="border: 1px solid black;">${feedback.name}</td>
