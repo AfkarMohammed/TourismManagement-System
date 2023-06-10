@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package  tours.com.TourismManagement.System.controller;
 
 import  tours.com.TourismManagement.System.model.Customer;
@@ -69,3 +70,9 @@ public class CustomerController {
     
 }
 
+=======
+package tours.com.TourismManagement.System.controller;
+
+public class CustomerController {
+}
+>>>>>>> origin/master

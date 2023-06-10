@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package  tours.com.TourismManagement.System.service;
 
 import  tours.com.TourismManagement.System.model.Customer;
@@ -90,3 +91,9 @@ public class CustomerService {
     }
 }
 
+=======
+package tours.com.TourismManagement.System.service;
+
+public class CustomerService {
+}
+>>>>>>> origin/master

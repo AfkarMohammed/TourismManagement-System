@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package  tours.com.TourismManagement.System.repository;
 
 import  tours.com.TourismManagement.System.model.Customer;
@@ -9,4 +10,9 @@ import java.util.Optional;
 @Repository
 public interface CustomerRepository extends JpaRepository <Customer, Integer> {
     Optional<Customer> findByEmailAndPassword(String email, String password);
+=======
+package tours.com.TourismManagement.System.repository;
+
+public interface CustomerRepository {
+>>>>>>> origin/master
 }

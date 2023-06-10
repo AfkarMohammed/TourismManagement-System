@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package  tours.com.TourismManagement.System.model;
 
 import lombok.Getter;
@@ -9,39 +8,22 @@ import javax.persistence.*;
 @Setter
 @Getter
 @Entity
-public class Customer {
 
+public class Feedback {
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
 
     @Column(nullable = false,length = 50)
-    private String firstname;
-
-    @Column
-    private String lastname;
-
-    @Column
-    private Integer mobile;
+    private String name;
 
     @Column
     private String email;
 
     @Column
-    private String password;
+    private String message;
 
     @Column
-    private String address;
-
-    @Column
-    private String country;
-
-
-
-=======
-package tours.com.TourismManagement.System.model;
-
-public class Customer {
->>>>>>> origin/master
+    private String ratingsforthehotel;
 }
